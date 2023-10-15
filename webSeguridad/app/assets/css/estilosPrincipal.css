@@ -1,0 +1,198 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(../images/disco.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* Texto en color blanco */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #4962cf; /* Morado */
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end; /* Mueve el contenido al extremo derecho */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Texto en color blanco */
+    font-weight: bold;
+    transition: color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+nav ul li a:hover {
+    color: #000000; /* Color de resaltado al pasar el ratón */
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    position: sticky;
+    padding: 0px 70px;
+    top:0;
+    
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4962cf; /* Morado */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(73, 98, 207, 0.9); /* Fondo azul transparente */
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content a {
+    color: #fff; /* Texto en color blanco */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(250, 250, 250, 0.9); /* Color de resaltado al pasar el ratón (azul transparente) */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos del título principal */
+.titulo-principal {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo-principal h1 {
+    font-size: 3em;
+    color: #4962cf; /* Morado */
+    background-color: #fff; /* Fondo en color blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-shadow: 2px 2px 4px #000000;
+    transition: background-color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+.titulo-principal h1:hover {
+    background-color: #969cb3; /* Cambia el fondo al pasar el ratón */
+}
+
+/* Estilos de la descripción general */
+.resumen {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(73, 98, 207, 0.9); /* Fondo azul transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.resumen p {
+    color: #fff; /* Texto en color blanco */
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.descripcion-general {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: #4962cf; /* Morado */
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #fff; /* Borde en color blanco */
+    border-radius: 10px;
+}
+
+/* Estilos de la lista de discotecas */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto; /* Centrar y ajustar la distancia desde la parte superior */
+    position: relative;
+    color: #fff; /* Texto en color blanco */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(73, 98, 207, 0.9); /* Fondo azul transparente */
+    border-radius: 10px;
+}
+
+.discotecas-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.discoteca {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+.discoteca:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Cambia el fondo al pasar el ratón */
+}
+
+.discoteca h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.discoteca p {
+    font-size: 16px;
+}
+
+/* Enlace para cerrar sesión */
+.container a {
+    color: #fff; /* Texto en color blanco */
+    text-decoration: underline;
+}
+
+.container a:hover {
+    color: #ffffff; /* Color de resaltado al pasar el ratón */
+}
+
+/* Pie de página */
+footer {
+    background-color: #4962cf; /* Morado */
+    color: #fff; /* Texto en color blanco */
+    padding: 10px 0;
+    text-align: center;
+}
